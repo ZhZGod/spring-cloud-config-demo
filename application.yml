@@ -1,0 +1,14 @@
+﻿spring:
+  profiles:
+    active:
+    - dev
+------
+spring:
+  profiles: dev
+  application:
+    name: zzhcloud-config-dev
+------
+spring:
+  profiles: test
+  application:
+    name: zzhcloud-config-test
