@@ -1,4 +1,4 @@
-spring:
+ï»¿spring:
   profiles:
     active:
     - dev
@@ -10,9 +10,9 @@ spring:
   application:
     name: cloud-config-client
 eureka:
-  client: #¿Í»§¶Ë×¢²á½øeureka·şÎñÁĞ±íÄÚ
+  client: #å®¢æˆ·ç«¯æ³¨å†Œè¿›eurekaæœåŠ¡åˆ—è¡¨å†…
     service-url:
-      defaultZone: http://eureka-dev.com:7001/eureka
+      defaultZone: http://eureka7001.com:7001/eureka
 ---
 server:
   port: 8202
@@ -21,7 +21,7 @@ spring:
   application:
     name: cloud-config-client
 eureka:
-  client: #¿Í»§¶Ë×¢²á½øeureka·şÎñÁĞ±íÄÚ
+  client: #å®¢æˆ·ç«¯æ³¨å†Œè¿›eurekaæœåŠ¡åˆ—è¡¨å†…
     service-url:
-      defaultZone: http://eureka-test.com:7001/eureka
+      defaultZone: http://eureka7001.com:7001/eureka
 
