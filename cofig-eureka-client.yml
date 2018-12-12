@@ -2,6 +2,7 @@
   profiles: dev
     active:
     - dev
+---
 server:
   port: 7001
 
