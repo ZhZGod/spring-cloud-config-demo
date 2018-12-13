@@ -3,33 +3,25 @@
     active:
     - dev
 ---
+server:
+  port: 8201
 spring:
   profiles: dev
   application:
-    name: config-eureka-7001-client
-server:
-  port: 7001
+    name: cloud-config-client
 eureka:
-  instance:
-    hostname: eureka7001.com
-  client:
-    register-with-eureka: false
-    fetch-registry: false
+  client: #客户端注册进eureka服务列表内
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka
 ---
+server:
+  port: 8202
 spring:
   profiles: test
   application:
-    name: config-eureka-7001-client
-server:
-  port: 7001
+    name: cloud-config-client
 eureka:
-  instance:
-    hostname: eureka7001.com
-  client:
-    register-with-eureka: false
-    fetch-registry: false
+  client: #客户端注册进eureka服务列表内
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka
 
