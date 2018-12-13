@@ -21,9 +21,7 @@ spring:
       initial-size: 5                                       # 初始化连接数
       max-total: 5                                          # 最大连接数
       max-wait-millis: 200                                  # 等待连接获取的最大超时时间
-#  mvc:
-#    favicon:
-#      enabled: false
+
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
   type-aliases-package: com.zzh.coud.domain    # 所有Entity别名类所在包
@@ -37,7 +35,7 @@ eureka:
   instance:
     instance-id: cloud-dept8001
     prefer-ip-address: true     #访问路径可以显示IP地址
-#
+
 info:
   app.name: cloud-dept-info-8001
   company.name: 赵志恒cloud-dept8001端口提供
@@ -62,9 +60,7 @@ spring:
       initial-size: 5                                       # 初始化连接数
       max-total: 5                                          # 最大连接数
       max-wait-millis: 200                                  # 等待连接获取的最大超时时间
-#  mvc:
-#    favicon:
-#      enabled: false
+
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
   type-aliases-package: com.zzh.coud.domain    # 所有Entity别名类所在包
@@ -78,7 +74,7 @@ eureka:
   instance:
     instance-id: cloud-dept8001
     prefer-ip-address: true     #访问路径可以显示IP地址
-#
+
 info:
   app.name: cloud-dept-info-8001
   company.name: 赵志恒cloud-dept8001端口提供
