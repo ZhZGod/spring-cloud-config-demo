@@ -5,10 +5,10 @@
 ---
 server:
   port: 8001
-
+  
 spring:
   application:
-    name: cloud-config-provider-dept
+    name: cloud-provider-dept
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
@@ -23,13 +23,12 @@ spring:
 #  mvc:
 #    favicon:
 #      enabled: false
-  
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
   type-aliases-package: com.zzh.coud.domain    # 所有Entity别名类所在包
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
-
+    
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url:
@@ -37,7 +36,7 @@ eureka:
   instance:
     instance-id: cloud-dept8001
     prefer-ip-address: true     #访问路径可以显示IP地址
-
+#
 info:
   app.name: cloud-dept-info-8001
   company.name: 赵志恒cloud-dept8001端口提供
@@ -46,14 +45,14 @@ info:
 ---
 server:
   port: 8001
-
+  
 spring:
   application:
-    name: cloud-config-provider-dept
+    name: cloud-provider-dept
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource            # 当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver              # mysql驱动包
-    url: jdbc:mysql://localhost:3306/spring_cloud              # 数据库名称
+    url: jdbc:mysql://localhost:3306/spring_cloud02              # 数据库名称
     username: root
     password: root123
     dbcp2:
@@ -64,13 +63,12 @@ spring:
 #  mvc:
 #    favicon:
 #      enabled: false
-  
 mybatis:
   config-location: classpath:mybatis/mybatis.cfg.xml        # mybatis配置文件所在路径
   type-aliases-package: com.zzh.coud.domain    # 所有Entity别名类所在包
   mapper-locations:
   - classpath:mybatis/mapper/**/*.xml                       # mapper映射文件
-
+    
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url:
@@ -78,7 +76,7 @@ eureka:
   instance:
     instance-id: cloud-dept8001
     prefer-ip-address: true     #访问路径可以显示IP地址
-
+#
 info:
   app.name: cloud-dept-info-8001
   company.name: 赵志恒cloud-dept8001端口提供
