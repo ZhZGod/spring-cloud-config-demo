@@ -8,7 +8,7 @@ server:
 spring:
   profiles: dev
   application:
-    name: cloud-config-dept2-8001-client
+    name: cloud-config-dept2-123-client
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url:
@@ -19,7 +19,7 @@ server:
 spring:
   profiles: test
   application:
-    name: cloud-config-dept2-8001-client
+    name: cloud-config-dept2-123-client
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url:
